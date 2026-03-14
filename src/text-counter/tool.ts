@@ -47,7 +47,7 @@ export function renderTextCounterTool(container: HTMLElement) {
     const words = text.trim() ? text.trim().split(/\s+/).length : 0
     const chars = text.length
     const charsNoSpaces = text.replace(/\s/g, '').length
-    const paragraphs = text.trim() ? text.trim().split(/\n\s*\n/).length : 0
+    const paragraphs = text.trim() ? text.trim().split(/\r?\n/).filter((line) => line.trim()).length : 0
     const bytes = new TextEncoder().encode(text).length
     const readingMinutes = words / 250
     const speakingMinutes = words / 150

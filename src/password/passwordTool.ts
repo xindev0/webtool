@@ -176,7 +176,7 @@ export function renderPasswordTool(container: HTMLElement) {
             <input class="wt-input" id="pw-length" type="number" min="4" max="128" value="16" style="width:90px" />
             <span class="wt-muted" style="font-size:12px">4 – 128</span>
           </div>
-          <div id="pw-range-row" style="display:none" class="wt-row" style="align-items:center;gap:10px;flex-wrap:wrap">
+          <div id="pw-range-row" class="wt-row" style="display:none;align-items:center;gap:10px;flex-wrap:wrap">
             <label class="wt-label" style="margin:0;white-space:nowrap">${escapeHtml(t('password.minLength'))}</label>
             <input class="wt-input" id="pw-min" type="number" min="4" max="128" value="12" style="width:90px" />
             <label class="wt-label" style="margin:0;white-space:nowrap">${escapeHtml(t('password.maxLength'))}</label>
@@ -269,7 +269,7 @@ export function renderPasswordTool(container: HTMLElement) {
             <input class="wt-input" id="pw-pin-length" type="number" min="4" max="16" value="6" style="width:90px" />
             <span class="wt-muted" style="font-size:12px">4 – 16</span>
           </div>
-          <div id="pw-pin-range-row" style="display:none" class="wt-row" style="align-items:center;gap:10px;flex-wrap:wrap">
+          <div id="pw-pin-range-row" class="wt-row" style="display:none;align-items:center;gap:10px;flex-wrap:wrap">
             <label class="wt-label" style="margin:0;white-space:nowrap">${escapeHtml(t('password.minLength'))}</label>
             <input class="wt-input" id="pw-pin-min" type="number" min="4" max="16" value="4" style="width:90px" />
             <label class="wt-label" style="margin:0;white-space:nowrap">${escapeHtml(t('password.maxLength'))}</label>
